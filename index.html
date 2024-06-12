@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./imagens/android-chrome-192x192.png" type="image/x-icon">
+    <title>Bilu Store</title>
+</head>
+<body>
+    <header>
+
+        <div class="titulo">
+            <img src="./Imagens/Bilu store.JPG" alt="titulo">
+        </div>
+    <section class="headerContainer">
+        <div class="busca">
+            <div class="divBusca">
+                <input type="text" id="txtBusca" placeholder="Pesquise Aqui">
+                <button type="button" id="btnBusca">Buscar</button>
+            </div>
+        </div>
+
+        <div class="icones">
+            <img src="./imagens/notificacao-removebg-preview.png" alt="notificação" height="85vh" width="80vw">
+
+            <a href="cadastro.html"><img src="./imagens/cadastro-removebg-preview.png" height="90vh" width="75vw">
+
+            <div class="imgCarrinho">
+                <a href="carrinho.html"> <img src="./imagens/carrinho2.JPG" alt="carrinho" width="75vw" height="90vh"></a>
+            </div>
+        </div>
+
+    </section>
+</header>
+
+<main>
+
+    <h1 class="texto">Veja nossos produtos disponíveis!!!</h1>
+
+    <section class="produtosPrincipais">
+        <div id="produtos">
+            
+            <div>
+                <h1>Pistola alienígena</h1>
+                <div class="imagens">
+
+                    <img src="./imagens/pistola_laser1-removebg-preview.png" alt="Pistola laser">
+                </div>
+                <h1>R$5.000,00</h1>
+                <div class="alignButton">
+                    <div class="botaoModal" onclick="abrirModalProduto('modalPistola')" id="exit">Inspecionar produto</div>
+                </div>
+
+                <div class="janelaModal" id="modalPistola">
+                    <div class="modal">
+                        <div onclick="exit()" class="exit">
+                            <button><img src="./imagens/ext.png" class="exit"></button>
+                        </div>
+
+                        <div>
+                            <h1 class="tituloModal">Pistola Alienígena</h1>
+                            <p class="descricaoModal">
+                                A Pistola Alienígena é uma arma feita com materiais raros que eram utilizados nas antigas armas dos alienígenas. Seus tiros atravessam paredes de ferro com 10 cm de espessura e é recarregável.
+                            </p>
+                            <p class="descricaoModal">
+                                ATENÇÃO:
+                                Para utilizar esta arma deve ter o porte de arma alienígena. Comprando o porte a pessoa faz um teste para ver se pode portar uma arma alienígena.
+                                Quando a arma é muito utilizada ela superaquece, caso a pessoa continue a utilizando há risco dela explodir e causar danos físicos e materiais (Nã nos responsabilizamos pelo mau uso da arma alienígena)!!!
+                            </p>
+                        </div>
+
+                        <div class="imagensModal">
+                            <img src="./Imagens/pistola_laser1-removebg-preview.png" alt="pistola">
+                        </div>
+
+                        <h1>
+                           R$5.000,00 
+                        </h1>
+
+                        <div class="alignButton">
+                            <div class="botaoAdd_carrinho" onclick="addCarrinho('Pistola')">
+                                Adicionar ao carrinho
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="produtos">
+            <div>
+                <h1>Mini Alien (fantasia aleatória)</h1>
+                <div class="imagens">
+                    <img src="./imagens/mini_alien-removebg-preview.png" alt="Alienígena em miniatura" height="200vh" width="150vw">
+                </div>
+                <h1>R$750,00</h1>
+                <div class="alignButton">
+                    <div class="botaoModal" id="botaoModal_alien" onclick="abrirModalProduto('janelaModal_alien')">Inspecionar produto</div>
+                </div>
+
+                <div class="janelaModal" id="janelaModal_alien">
+                    <div class="modal">
+                        <div onclick="exit()" class="exit" id="exit_alien">
+                            <button><img src="./imagens/ext.png" class="exit"></button>
+                        </div>
+
+                        <div>
+                            <h1 class="tituloModal">Mini Alienígena</h1>
+                            <p class="descricaoModal">
+                                O Mini Alien é ótima opção para companhia e para brincar, ele é um ser extremamente pequeno, mas é muito inteligente e brincalhão.
+                            </p>
+                            <p class="descricaoModal">
+                                Para quem gosta de colecionar, o Mini Alien é uma ótima opção, pois possui 8 estilos diferentes para ele. São eles: Michael Alien Jordan (Basquete); /
+                                Alien Jr. (Futebol); /
+                                Sargento Bilu (Soldado); /
+                                Alien advogado; /
+                                Alien estiloso; /
+                                Alien praiano; /
+                                Et Bilu (Alien normal); /
+                                God Alien (O mais raro).
+                            </p>
+                        </div>
+
+                        <div class="imagensModal">
+                            <img src="./Imagens/mini aliens.png" alt="mini aliens">
+                        </div>
+
+                        <h1>
+                           R$750,00 
+                        </h1>
+
+                        <div class="alignButton">
+                            <div class="botaoAdd_carrinho" onclick="addCarrinho('miniAlien')">
+                                Adicionar ao carrinho
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="produtos">
+            <div>
+                <h1>Pedaço de planeta</h1>
+                <div class="imagens">
+                    <img src="./imagens/planetas-removebg-preview.png" alt="Planetas">
+                </div>
+                <h1>R$100,00</h1>
+                <div class="alignButton">
+                    <div class="botaoModal" id="botaoModal_planeta" onclick="abrirModalProduto('janelaModal_planeta')">Inspecionar produto</div>
+                </div>
+
+
+                <div class="janelaModal" id="janelaModal_planeta">
+                    <div class="modal">
+                        <div onclick="exit()" class="exit" id="exit_planeta">
+                            <button><img src="./imagens/ext.png" class="exit"></button>
+                        </div>
+
+                        <div>
+                            <h1 class="tituloModal">Pedaço do planeta</h1>
+                            <p class="descricaoModal">
+                                Temos a opção de venda de pequenos pedaços de planetas aleatoriamente. Quanto maior o dinheiro investido mais terras você obtém, além de aumentar as chances de conquistar territórios em planetas melhores. 
+                            </p>
+                            <p class="descricaoModal">
+                                Após a pessoa comprar o pedaço de algum planeta ela tem direito de fazer qualquer coisa no território comprado. Como forma de garantia entregamos aos compradores um documento comprovando que o pedaço do planeta comprado é realmente verídico e que o comprador possui o direito de fazer qualquer coisa no planeta.
+                            </p>
+                        </div>
+
+                        <div class="imagensModal">
+                            <img src="./Imagens/todos planetas.png" alt="planetas">
+                        </div>
+
+                        <h1>
+                           R$100,00 
+                        </h1>
+
+                        <div class="alignButton">
+                            <div class="botaoAdd_carrinho" onclick="addCarrinho('pedacoPlaneta')">
+                                Adicionar ao carrinho
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div id="produtos">
+            <div>
+                <h1>Gosma de alien viva</h1>
+                <div class="imagens">
+                    <img src="./imagens/gosma_alienigena-removebg-preview.png" alt="Planetas">
+                </div>
+                <h1>R$250,00</h1>
+                <div class="alignButton">
+                    <div class="botaoModal" id="botaoModal_gosma" onclick="abrirModalProduto('janelaModal_gosma')">Inspecionar produto</div>
+                </div>
+
+
+                <div class="janelaModal" id="janelaModal_gosma">
+                    <div class="modal">
+                        <div onclick="exit()" class="exit" id="exit_gosma">
+                            <button><img src="./imagens/ext.png" class="exit"></button>
+                        </div>
+
+                        <div>
+                            <h1 class="tituloModal">Gosma de alien viva</h1>
+                            <p class="descricaoModal">
+                                A Gosma de Alien viva é parecida com uma Amoeba, porém muito mais divertida. O que diferencia ela da amoeba é o seu tempo de duração de aproximadamente 50 anos. Além disso ela pode se moldar transformando se em qualquer objeto.
+                            </p>
+                            <p class="descricaoModal">
+                                ALERTA: Não deixa a Gosma de Alien viva alimentar-se de carne de humanos ou animais. Caso aconteça algo não temos responsabilidade, pois foi avisado!!!
+                            </p>
+                        </div>
+
+                        <div class="imagensModal">
+                            <img src="./Imagens/gosma_alienigena-removebg-preview.png" alt="gosma de alien">
+                        </div>
+
+                        <h1>
+                           R$250,00 
+                        </h1>
+
+                        <div class="alignButton">
+                            <div class="botaoAdd_carrinho" onclick="addCarrinho('gosmaAlien')">
+                                Adicionar ao carrinho
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="produtos">
+            <div>
+                <h1>Rifle de precisão alienígena</h1>
+                <div class="imagens">
+                    <img src="./imagens/Alien_Rifle.webp" alt="Sniper alienígena" width="250vw" height="150vh">
+                </div>
+                <h1>R$150.000,00</h1>
+                <div class="alignButton">
+                    <div class="botaoModal" id="botaoModal_sniper" onclick="abrirModalProduto('janelaModal_sniper')">Inspecionar produto</div>
+                </div>
+
+
+                <div class="janelaModal" id="janelaModal_sniper">
+                    <div class="modal">
+                        <div onclick="exit()" class="exit" id="exit_sniper">
+                            <button><img src="./imagens/ext.png" class="exit"></button>
+                        </div>
+
+                        <div>
+                            <h1 class="tituloModal">Rifle de Precisão Alienígena</h1>
+                            <p class="descricaoModal">
+                                O rifle de precisão alienígena é uma das armas com a tecnologia mais avançada em toda a galáxia. Esta arma pode atravessar tanques de guerra blindados, possui uma tecnologia que permite ver através das paredes, seus tiros não são afetados pela força do vento. As características que faz esta arma ser uma das mais fortes de toda galáxia é sua regeneração (pode ser acertada e se regenera, caso seja explodida e sobre um pedaço da arma ela regenera em até um dia, isso ocorre devido a alta tecnologia que foi utilizada nessa arma), sua força de destruição (pode ser alterada para disparos como os de armas convencionais ou para disparos laser de alta potência, capazes de atravessar um tanque de guerra facilmente) e a mira do rifle de precisão, que além de poder ver através das paredes, pode ampliar em uma distância de até 100 Km.
+                            </p>
+                            <p class="descricaoModal">
+                                - É necessário ter o porte de arma alienígena para possuir o rifle de precisão alienígena.
+                            </p>
+                        </div>
+
+                        <div class="imagensModal">
+                            <img src="./Imagens/Alien_Rifle.webp" alt="sniper">
+                        </div>
+
+                        <h1>
+                           R$150.000,00 
+                        </h1>
+
+                        <div class="alignButton">
+                            <div class="botaoAdd_carrinho" onclick="addCarrinho('sniper')">
+                                Adicionar ao carrinho
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="produtos">
+            <div>
+                <h1>Dente de monstro alienígena</h1>
+                <div class="imagens">
+                    
+                    <img src="./imagens/dente veneno.png" alt="monstros" height="150vh" width="250vw">
+                    
+                </div>
+                <h1>R$500,00</h1>
+                <div class="alignButton">
+                    <div class="botaoModal" id="botaoModal_dente" onclick="abrirModalProduto('janelaModal_dente')">Inspecionar produto</div>
+                </div>
+
+
+                <div class="janelaModal" id="janelaModal_dente">
+                    <div class="modal">
+                        <div onclick="exit()" class="exit" id="exit_dente">
+                            <button><img src="./imagens/ext.png" class="exit"></button>
+                        </div>
+
+                        <div>
+                            <h1 class="tituloModal">Dente de Monstro Alienígena</h1>
+                            <p class="descricaoModal">
+                                Os dentes de monstros alienígenas são dentes retirados de monstros gigantes mortos pela associação dos defensores da Terra. Existem diversos tipos de dentes, cada um possui suas características únicas.
+                            </p>
+                            <p class="descricaoModal">
+                                Os dentes disponíveis no momento são: Dente elétrico (armazena eletricidade) / Dente ácido (serve para fazer curas ou venenos) / Dente flamejante (queima tudo que entra em contato) / Dente lunar (pode alterar a gravidade e curar doenças).
+                            </p>
+                        </div>
+
+                        <div class="imagensModal">
+                            <img src="./Imagens/dentes de monstros.png" alt="dentes">
+                        </div>
+
+                        <h1>
+                           R$500,00 
+                        </h1>
+
+                        <div class="alignButton">
+                            <div class="botaoAdd_carrinho" onclick="addCarrinho('Dente de Monstro Alienígena')">
+                                Adicionar ao carrinho
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="produtos">
+            <div>
+                <h1>Porte de arma alienígena</h1>
+                <div class="imagens">
+                    <img src="./imagens/porte arma.png" alt="passaporte" height="150vh" width="250vw">
+                </div>
+                <h1>R$99,99</h1>
+                <div class="alignButton">
+                    <div class="botaoModal" id="botaoModal_porte" onclick="abrirModalProduto('janelaModal_porte')">Inspecionar produto</div>
+                </div>
+
+
+                <div class="janelaModal" id="janelaModal_porte">
+                    <div class="modal">
+                        <div onclick="exit()" class="exit" id="exit_porte">
+                            <button><img src="./imagens/ext.png" class="exit"></button>
+                        </div>
+
+                        <div>
+                            <h1 class="tituloModal">Porte de Arma Alienígena</h1>
+                            <p class="descricaoModal">
+                                O porte de arma alienígena é algo obrigatório caso queira comprar uma arma alienígena.
+                            </p>
+                            <p class="descricaoModal">
+                                Vem com um teste para garantir se a pessoa é capaz de portar a arma alienígena!
+                            </p>
+                        </div>
+
+                        <div class="imagensModal">
+                            <img src="./Imagens/porte arma.png" alt="porte de arma">
+                        </div>
+
+                        <h1>
+                           R$99,99 
+                        </h1>
+
+                        <div class="alignButton">
+                            <div class="botaoAdd_carrinho" onclick="addCarrinho('Porte de Arma Alienígena')">
+                                Adicionar ao carrinho
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="produtos">
+            <div>
+                <h1>Viagem para outra galáxia</h1>
+                <div class="imagens">
+                    <img src="./imagens/galaxia-espiral.webp" alt="galáxia" height="150vh" width="250vw" >
+                </div>
+                <h1>R$1.000.000,00</h1>
+                <div class="alignButton">
+                    <div class="botaoModal" id="botaoModal_galaxia" onclick="abrirModalProduto('janelaModal_galaxia')">Inspecionar produto</div>
+                </div>
+
+
+                <div class="janelaModal" id="janelaModal_galaxia">
+                    <div class="modal">
+                        <div onclick="exit()" class="exit" id="exit_galaxia">
+                            <button><img src="./imagens/ext.png" class="exit"></button>
+                        </div>
+
+                        <div>
+                            <h1 class="tituloModal">Viagem para outra galáxia</h1>
+                            <p class="descricaoModal">
+                                Comprando este produto você recebe uma vaga para ir com a nossa tripulação visitar outra galáxia, com paradas em alguns planetas. Uma viagem muito divertida e cheia de aventuras para conhecer outros planetas e uma diferente galáxia.
+                            </p>
+
+                        </div>
+
+                        <div class="imagensModal">
+                            <img src="./Imagens/galaxia-espiral.webp" alt="dentes">
+                        </div>
+
+                        <h1>
+                           R$1.000.000,00 
+                        </h1>
+
+                        <div class="alignButton">
+                            <div class="botaoAdd_carrinho" onclick="addCarrinho('Viagem para outra galáxia')">
+                                Adicionar ao carrinho
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+
+        
+    </section>
+
+</main>
+
+<footer>
+    <div>
+        <h2>Instagram: @Bilu_store</h2>
+        <h2>Criadores: Artur Correa, Lucas Dionísio e Mariano Matte</h2>
+    </div>
+</footer>
+<script src="script.js"></script>
+<script src="scriptRefatoradoModal.js"></script>
+</body>
+</html>

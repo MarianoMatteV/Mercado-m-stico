@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pagamento.css">
+    <link rel="shortcut icon" href="./imagens/android-chrome-192x192.png" type="image/x-icon">
+    <title>Bilu Store</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="titulo">
+            <img src="./Imagens/Bilu store.JPG" alt="titulo">
+        </div>
+        <section class="headerContainer">
+            <div class="busca">
+                <!-- <div class="divBusca">
+                <input type="text" id="txtBusca" placeholder="Pesquise Aqui">
+                <button id="btnBusca">Buscar</button>
+            </div> -->
+            </div>
+
+            <div class="icones">
+                <img src="./imagens/notificacao-removebg-preview.png" alt="notificação" height="85vh" width="80vw">
+
+                <a href="cadastro.html"><img src="./imagens/cadastro-removebg-preview.png" height="90vh" width="75vw">
+
+                    <div class="imgCarrinho">
+                        <a href="index.html"> <img src="./imagens/home.png" alt="home" width="75vw"
+                                height="90vh"></a>
+                    </div>
+            </div>
+
+        </section>
+    </header>
+
+                                                <!-- PIX -->
+
+    <section class="pagamentos">
+
+        <div class="formasDePagamento">
+            <div class="botaoFormaDePagamentoModal" onclick="mostrarModalPagamentos(1)"><img src="./imagens/pix.jpg"
+                    alt="pix" id="pix"></div>
+            <div class="botaoFormaDePagamentoModal" onclick="mostrarModalPagamentos(2)">
+                <img src="./imagens/cartao.jpg" alt="cartões" id="cartão">
+            </div>
+        </div>
+
+        <div class="janelaModal" id="containerModalPix">
+            <div class="modal">
+                <button onclick="fecharModalPagamentos()"><img src="./imagens/ext.png" class="exit"></button>
+
+
+                <div class="containerModal">
+                    <h1 class="tituloModal">Pagamento PIX</h1>
+                    <p class="descricaoModal">
+
+                    <div class="container">
+                        <h1>Finalização da Compra</h1>
+                        <form>
+                            <div class="form-section">
+                                <label for="nome">Nome Completo:</label>
+                                <input type="text" id="nome" name="nome" placeholder="Digite aqui seu nome" required>
+
+                                <label for="email">CPF:</label>
+                                <input type="text" id="email" name="email" placeholder="Digite aqui seu CPF"
+                                    required>
+
+                                <label for="telefone">Telefone:</label>
+                                <input type="tel" id="telefone" name="telefone" placeholder="Digite aqui seu telefone"
+                                    required>
+                            </div>
+
+                            <div>
+                                <img src="./imagens/qr code.jpg" alt="qrCode" class="qrCode">
+                            </div>                            
+                        </form>
+                    </div>
+                </div>
+                </p>
+            </div>
+        </div>
+
+                                                    <!-- CARTÃO -->
+
+            <div class="janelaModal" id="containerModalCartao">
+                <div class="modal">
+                    <button onclick="fecharModalPagamentos()"><img src="./imagens/ext.png" class="exit"></button>
+
+
+                    <div class="containerModal">
+                        <h1 class="tituloModal">Pagamento Cartão</h1>
+
+                        <div class="container">
+                            <h1>Finalização da Compra</h1>
+                            <form>
+                                <div class="form-section">
+                                    <label for="nome">Nome Completo:</label>
+                                    <input type="text" id="nome" name="nome" placeholder="Digite aqui seu nome"
+                                        required>
+
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email" placeholder="Digite aqui seu email"
+                                        required>
+
+                                    <label for="telefone">Telefone:</label>
+                                    <input type="tel" id="telefone" name="telefone"
+                                        placeholder="Digite aqui seu telefone" required>
+                                </div>
+
+                                <div class="form-section">
+                                    <label for="endereco">Endereço:</label>
+                                    <input type="text" id="endereco" name="endereco"
+                                        placeholder="Digite aqui seu endereço" required>
+
+                                    <label for="cidade">Cidade:</label>
+                                    <input type="text" id="cidade" name="cidade" placeholder="Digite aqui sua cdade"
+                                        required>
+
+                                    <label for="estado">Estado:</label>
+                                    <input type="text" id="estado" name="estado" placeholder="Digite aqui seu estado "
+                                        required>
+
+                                    <label for="cep">CEP:</label>
+                                    <input type="text" id="cep" name="cep" placeholder="Digite aqui seu CEP" required>
+                                </div>
+
+                                <div class="form-section">
+                                    <label for="cartao">Número do Cartão:</label>
+                                    <input type="text" id="cartao" name="cartao" required>
+
+                                    <label for="validade">Validade:</label>
+                                    <input type="text" id="validade" name="validade" required>
+
+                                    <label for="cvv">CVV:</label>
+                                    <input type="text" id="cvv" name="cvv" required>
+                                </div>
+
+                                <button type="submit">Finalizar Compra</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

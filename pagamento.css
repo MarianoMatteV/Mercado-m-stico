@@ -1,0 +1,177 @@
+body {
+    background-color: #B2D2A4;
+  }
+  
+  .container{
+      margin-right: 50px;
+      margin-left: 50px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  h1 {
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333;
+  }
+  
+  form {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .form-section {
+      margin-bottom: 20px;
+  }
+  
+  h2 {
+      margin-bottom: 10px;
+      color: #555;
+  }
+  
+  label {
+      margin-bottom: 5px;
+      margin-top: 10px;
+      display: block;
+  }
+  
+  input {
+      width: 90%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+  }
+  
+  button {
+      padding: 15px;
+      background-color: #459b26;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+  }
+  
+  button:hover {
+      background-color: #2C5E1A;
+      transition: 0.1s;
+  }
+  
+  /*  */
+  
+  .formasDePagamento{
+      margin-top: 10px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+  }
+  
+  #cartão{
+      box-shadow: 0 0 10px black;
+      border-radius: 20px;
+      cursor: pointer;
+      height: 450px;
+  }
+  
+  #pix{
+      box-shadow: 0 0 10px black;
+      border-radius: 20px;
+      cursor: pointer;
+  }
+  
+  .formasDePagamento img {
+      max-width: 80%;
+  }
+  
+  .botaoFormaDePagamentoModal{
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  /*  */
+  
+  .pagamentos {
+      position: relative;
+      display: flex;
+      justify-content: center;
+  }
+    
+    .janelaModal{
+        display: none;
+        background-color: #00000080; 
+        /* justify-content: center; */
+        align-items: center;
+        /* position: absolute; */
+        transform: translate(-60%, 140%);
+        margin: auto;
+        width: 50%;
+        height: 50%;
+    }
+    
+    .modal{
+        background-color: #7b8f73;
+        min-width: 60%;
+        min-height: 70%;
+        border-radius: 10px;
+        padding: 15px;
+        /* top: 100%;
+        left: 100%; */
+        transform: translate(-100%, -50%);
+
+        
+        
+        
+        /* background-color: #d4eec9;  */
+    }
+   /* Form */
+  
+   form {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr ;
+      gap: 50px;
+   }
+  
+  .containerModal {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+      width: 100%;
+  
+  }
+  
+  .qrCode{
+      height: 270px;
+      width: 270px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+  }
+  
+  .botaoFinalizarCompra{
+      display: flex;
+      margin-top: 50px;
+      background-color: #2C5E1A;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+  }
+  
+  button:hover {
+      background-color: #2C5E1A;
+  }
+  
+  .tituloModal{
+      margin-bottom: 20px;
+  }

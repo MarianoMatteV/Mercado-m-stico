@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="carrinho.css">
+  <link rel="shortcut icon" href="./imagens/android-chrome-192x192.png" type="image/x-icon">
+  <script src="loja.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="titulo">
+      <img src="./Imagens/Bilu store.JPG" alt="titulo">
+    </div>
+
+    <section class="headerContainer">
+      <div class="busca">
+        <div class="divBusca">
+          <input type="text" id="txtBusca" placeholder="Pesquise Aqui">
+          <button id="btnBusca">Buscar</button>
+
+        </div>
+      </div>
+
+
+
+      <div class="icones">
+        <img src="./Imagens/notificacao-removebg-preview.png" alt="notificação" height="85vh" width="80vw">
+
+        <a href="cadastro.html"><img src="./Imagens/cadastro-removebg-preview.png" height="90vh" width="75vw"></a>
+
+        <a href="index.html"><img src="./Imagens/home.png" alt="home" width="80vw" height="85vh"></a>
+
+      </div>
+
+    </section>
+  </header>
+  <main>
+    <div class="page-title">Seu Carrinho</div>
+    <div class="content1" id="carrinhoContainer">
+
+    </div>
+
+    <div class="botao">
+
+      <div><button onclick="limparCarrinho()">Limpar Carrinho</button></div> 
+
+      <div><button type="button" ><a href="pagamento.html">Finalizar Compra</a></button></div>
+
+    </div>
+
+
+  </main>
+
+  <script src="scriptRefatoradoModal.js">
+  </script>
+</body>
+
+
+</html>

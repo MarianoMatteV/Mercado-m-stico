@@ -1,0 +1,258 @@
+/* ESTILIZAÇÃO BÁSICA */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+  background-color: #B2D2A4;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+}
+
+/* --------------------------------------------------------- */
+/* FOOTER */
+
+footer{
+  /* background-color: #9e9d9d; */
+  background-color: #778572;
+  margin-top: 15vh;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+
+/* ---------------------------------------------------------- */
+/* HEADER */
+
+header{
+    background-color: #2C5E1A;
+  }
+
+.titulo{
+    display: flex;
+    justify-content: center;
+}
+
+.headerContainer{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 2em;
+    justify-content: space-between;
+}
+
+.busca{
+    display: flex;
+    justify-content: center;
+}
+
+.divBusca{
+    background-color:#E0EEEE;
+    border:solid 2px #5F9EA0;
+    border-radius:10px;
+    width:30vw;
+    height:3.3vh;
+    margin-right: 2em;
+  }
+  
+  #txtBusca{
+    float:left;
+    background-color: transparent;
+    padding-left:1.5em;
+    font-size: 1rem;
+    border: none;
+    height:3.5vh;
+    width:23.7vw;
+  }
+
+  #btnBusca{
+    cursor: pointer;
+    border:none;
+    float:left;
+    height: 3.5vh;
+    border-radius: 0px 7px 7px 0px;
+    width: 5vw;
+    font-weight:bold;
+    background:#5F9EA0;
+  }
+  
+ #btnBusca:active{
+  background-color: #355555;
+  transition: 0.1s;
+ }
+
+.icones{
+    display: flex;
+
+
+}
+
+/* ----------------------------------------------------------------- */
+
+
+  .texto{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+  }
+  
+/* ORGANIZAÇÃO DA POSIÇÃO DOS PRODUTOS */
+
+  .produtosPrincipais{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 25% 25% 25%;
+  
+    gap: 10em;
+    row-gap: 3em;
+    column-gap: 5em;
+    /* flex-direction: row; */
+    justify-content: center;
+    
+  }
+  
+/* ESTILIZAÇÃO DOS PRODUTOS*/
+
+  #produtos{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 5px black;
+    min-width: 40vw;
+    min-height: 50vh;
+    position: relative;
+  }
+
+
+/* CENTRALIZAR AS IMAGENS */
+
+  .imagens{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 0.6em;
+  }
+
+/* ESTILIZAR O BOTÃO */
+
+
+.botaoModal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 15vw;
+    border-radius: 10px;
+    background-color: #7b8f73;
+    cursor: pointer;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    left: 0;
+    
+    
+}
+
+/* -------------------------------------------------------- */
+/* MODAL */
+
+.exit{
+  height: 1,25em;
+  width: 1,25em;
+}
+
+.janelaModal{
+  margin-top: 15vh;
+  width: 80vw;
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  display: none;
+  background-color: #d4eec9;
+  z-index: 999;
+    /* background-color: #00000080; 
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+  
+}
+
+/* .janelaModal_direita{
+  margin-top: 15vh;
+  width: 1500px;
+  height: 900px;
+  border-radius: 20px;
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  transform: translate(-100%, -100%);
+  display: none;
+  background-color: #d4eec9;
+  z-index: 999;
+
+  
+} */
+
+
+/* .modal{
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    
+    background-color: #d4eec9; 
+} */
+
+.tituloModal{
+  margin-top: 5vh;
+}
+
+.descricaoModal{
+  margin-top: 5vh;
+}
+
+.imagensModal{
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.alignButton{
+  display: flex;
+  justify-content: center;
+}
+
+.botaoAdd_carrinho{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  width: 15vw;
+  border-radius: 10px;
+  background-color: #7b8f73;
+  cursor: pointer;
+  margin-top: 1em;
+  left: 0;
+  /* display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  width: 15vw;
+  height: 5vh; */
+}
