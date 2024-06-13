@@ -1,100 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="carrinho.css">
-    <link rel="shortcut icon" href="./imagens/android-chrome-192x192.png" type="image/x-icon">
-    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="carrinho.css">
+  <link rel="shortcut icon" href="./imagens/android-chrome-192x192.png" type="image/x-icon">
+  <script src="loja.js"></script>
 </head>
+
 <body>
-    <header>
-      <div class="titulo">
-        <img src="./Imagens/Bilu store.JPG" alt="titulo">
+  <header>
+    <div class="titulo">
+      <img src="./Imagens/Bilu store.JPG" alt="titulo">
+    </div>
+
+    <section class="headerContainer">
+      <div class="busca">
+        <div class="divBusca">
+          <input type="text" id="txtBusca" placeholder="Pesquise Aqui">
+          <button id="btnBusca">Buscar</button>
+
+        </div>
       </div>
 
-        <section class="headerContainer">
-        <div class="busca">
-            <div class="divBusca">
-                <input type="text" id="txtBusca" placeholder="Pesquise Aqui">
-                <button id="btnBusca">Buscar</button>
-
-            </div>
-        </div>
 
 
+      <div class="icones">
+        <img src="./Imagens/notificacao-removebg-preview.png" alt="notificação" height="85vh" width="80vw">
 
-        <div class="icones">
-            <img src="./Imagens/notificacao-removebg-preview.png" alt="notificação" height="85vh" width="80vw">
+        <a href="cadastro.html"><img src="./Imagens/cadastro-removebg-preview.png" height="90vh" width="75vw"></a>
 
-            <a href="cadastro.html"><img src="./Imagens/cadastro-removebg-preview.png" height="90vh" width="75vw"></a>
+        <a href="index.html"><img src="./Imagens/home.png" alt="home" width="80vw" height="85vh"></a>
 
-            <a href="index.html"><img src="./Imagens/home.png" alt="home" width="80vw" height="85vh"></a>
+      </div>
 
-        </div>
+    </section>
+  </header>
+  <main>
+    <div class="page-title">Seu Carrinho</div>
+    <div class="content1" id="carrinhoContainer">
 
-        </section>
-    </header>
-    <main>
-        <div class="title">Seu Carrinho</div>
-        <div class="content1">
-        <section>
-            <main class="main-section">
-                <section class="container normal-section">
-                  <h2 class="section-title">Posters</h2>
-          
-                  <div class="products-container">
-                    <div class="movie-product">
-                      <strong class="product-title">Poster 1</strong>
-                      
-                      <img src="/imagens/dente lua.png" alt="Poster 1" class="product-image">
-                      <div class="product-price-container">
-                        <span class="product-price">R$29,99</span>
-                        <button type="button" class="button-hover-background">Adicionar ao carrinho</button>
-                      </div>
-                    </div>
-          
-                    <div class="movie-product">
-                      <strong class="product-title">Poster 2</strong>
-                     
-                      <img src="/images/poster2.png" alt="Poster 2" class="product-image">
-                      <div class="product-price-container">
-                        <span class="product-price">R$39,99</span>
-                        <button type="button" class="button-hover-background">Adicionar ao carrinho</button>
-                      </div>
-                    </div>
-        </section>
-        <section class="container normal-section">
-            <h2 class="section-title">Carrinho</h2>
-    
-            <table class="cart-table">
-              <thead>
-                <tr>
-                  <th class="table-head-item first-col">Item</th>
-                  <th class="table-head-item second-col">Preço</th>
-                  <th class="table-head-item third-col">Quantidade</th>
-                </tr>
-              </thead>
-    
-              <tbody>
-    
-              </tbody>
-    
-              <tfoot>
-                <tr>
-                  <td colspan="3" class="cart-total-container">
-                    <strong>Total</strong>
-                    <span>R$0,00</span>
-                  </td>
-                </tr>
-              </tfoot>
-            </table>
-    
-            <button type="button" ><a href="pagamento.html">Finalizar Compra</a></button>
-          </section>
+    </div>
 
-        </div>
-    </main>
+    <div class="botao">
+
+      <div><button onclick="limparCarrinho()">Limpar Carrinho</button></div> 
+
+      <div><button type="button" ><a href="pagamento.html">Finalizar Compra</a></button></div>
+
+    </div>
+
+
+  </main>
+
+  <script src="scriptRefatoradoModal.js">
+  </script>
 </body>
+
+
 </html>

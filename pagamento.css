@@ -1,4 +1,3 @@
-
 body {
     background-color: #B2D2A4;
   }
@@ -112,7 +111,7 @@ body {
         /* justify-content: center; */
         align-items: center;
         /* position: absolute; */
-        transform: translate(-60%, -50%);
+        transform: translate(-60%, 140%);
         margin: auto;
         width: 50%;
         height: 50%;

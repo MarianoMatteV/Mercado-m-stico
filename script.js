@@ -1,4 +1,4 @@
-// MODAL PRODUTOS
+// MODAL
 let fechar = document.querySelector(".exit")
 let modal = document.querySelector(".janelaModal")
 let botao = document.querySelector(".botaoModal")
@@ -114,8 +114,7 @@ fechar8.addEventListener('click', () => {
 
 // --------------------------------------------------------
 
-
-// MODAL PAGAMENTO
+// modal pagamento
 
 function fecharModalPagamentos(){
     const modalPagamentosPix = document.getElementById("containerModalPix")
@@ -138,191 +137,62 @@ function mostrarModalPagamentos(modal){
 }
 
 
-// ---------------------------------------------------------------
-// MODAL CARRINHO
-
-
-
-function abrirModalProduto(produto) {
-
-    const modal = document.getElementById(produto)
-    modal.style.display = `block`
-
-}
-
-function fecharModalProduto(produto) {
-
-    const modal = document.getElementById(produto)
-    modal.style.display = `nond`
-
-}
-
-function addCarrinho(item) {
-
-    let itemCarrinho
-
-    switch (item) {
-        case 'Pistola':
-            itemCarrinho = {
-                nome: 'Pistola',
-                preco: 5000,
-                srcImagem: 'imagens/pistola_laser1-removebg-preview.png'
-            }
-            break;
-
-        case 'Mini alien':
-            itemCarrinho = {
-                nome: 'Mini alien',
-                preco: 750,
-                srcImagem: 'imagens/mini_alien-removebg-preview.png'
-            }
-            break;
-
-        //...
-    }
-
-    let carrinho = JSON.parse(localStorage.getItem('carrinho'))
-
-    let itensCarrinho = []
-
-    if(carrinho === null) {
-        console.log("eles")
-        itensCarrinho.push({
-            itemCarrinho,
-            quantidade: 1,
-        })
-    } else {
-        itensCarrinho = carrinho.itensCarrinho
-        console.log(itensCarrinho)
-
-        console.log(itensCarrinho.find((itemCarrinhoFind) => itemCarrinhoFind.itemCarrinho.nome === itemCarrinho.nome));
-
-        const verificaSeJaExiste = itensCarrinho.find((itemCarrinhoFind) => itemCarrinhoFind.itemCarrinho.nome === itemCarrinho.nome)
-        if (verificaSeJaExiste) {
-            
-            let indexItem = itensCarrinho.indexOf(verificaSeJaExiste)
-
-            console.log(indexItem)
-
-            console.log(itensCarrinho[indexItem])
-            itensCarrinho[indexItem].quantidade++
-        } else {
-            itensCarrinho.push({
-               itemCarrinho,
-               quantidade: 1,
-            })
-        }
-    }  
-    localStorage.setItem("carrinho", JSON.stringify({
-        itensCarrinho
-    }))
-}
-
-function loadCarrinho() {
-
-    let divCarrinho = document.getElementById("carrinhoContainer")
-
-    const carrinhoJSON = JSON.parse(localStorage.getItem('carrinho'))
-
-    console.log(carrinhoJSON)
 
 
 
 
-    if (!carrinhoJSON) {
-        divCarrinho.innerHTML = `
-        <h1>Carrinho vazio</h1>
-        `
-    } else {
-        const itensCarrinho = carrinhoJSON.itensCarrinho;
-
-        itensCarrinho.forEach((item) => {
-
-            let divItem = document.createElement('div');
-
-            divItem.innerHTML = `
-                <div>
-                    <h1>${item.itemCarrinho.nome}</h1>
-                    <h2>R$${item.itemCarrinho.preco * item.quantidade}</h2>
-                    <h2>${item.quantidade}</h2>
-                    <img src='${item.itemCarrinho.srcImagem}'>
-                </div>
-                
-            `
-            divCarrinho.appendChild(divItem)
-        })
-    }
-}
-
-loadCarrinho()
 
 
 
 
-// function addCarrinho(item) {
+// let fechar8 = document.getElementsById('.exit')
+// let modal8 = document.getElementById('.janelaModal')
+// let botao8 = document.getElementById('.botaoModal')
 
-//     console.log('add carrinho');
+// botao8.addEventListener('click', () => {
+//     modal8.style.display = 'block'
+//     modal8.style.visibility = 'visible'
+// })
 
-//     let itemCarrinho
+// fechar8.addEventListener('click', () => {
+//     modal8.style.display = 'none'
+// })
 
-//     switch (item) {
-//         case 'Pistola':
-//             itemCarrinho = {
-//                 nome: 'Pistola',
-//                 preco: 5000
-//             }
-//             break;
+// function botaoModal(){
+//     let modal = document.querySelector('.janelaModal')
 
-//         case 'Mini alien':
-//             itemCarrinho = {
-//                 nome: 'Mini alien',
-//                 preco: 750
-//             }
-//             break;
+//     modal.style.display = 'block'
+// }
 
-//         //...
-//     }
+// function exit(){
+//     let fechar = document.querySelector('.janelaModal')
 
-//     console.log(itemCarrinho)
-//     let carrinho = JSON.parse(localStorage.getItem('carrinho'))
-
-//     let itensCarrinho = []
-
-//     console.log(carrinho)
-
-
-//     if(carrinho === null) {
-//         console.log("eles")
-//         itensCarrinho.push({
-//             itemCarrinho,
-//             quantidade: 1
-//         })
-//     } else {
-//         itensCarrinho = carrinho.itensCarrinho
-//         console.log(itensCarrinho)
-
-//         console.log(itensCarrinho.find((itemCarrinhoFind) => itemCarrinhoFind.itemCarrinho.nome === itemCarrinho.nome));
-
-//         const verificaSeJaExiste = itensCarrinho.find((itemCarrinhoFind) => itemCarrinhoFind.itemCarrinho.nome === itemCarrinho.nome)
-//         if (verificaSeJaExiste) {
-            
-//             let indexItem = itensCarrinho.indexOf(verificaSeJaExiste)
-
-//             console.log(indexItem)
-
-//             console.log(itensCarrinho[indexItem])
-//             itensCarrinho[indexItem].quantidade++
-//         } else {
-//             console.log("eles")
-//             itensCarrinho.push({
-//                itemCarrinho,
-//                quantidade: 1
-//             })
-//         }
-//     }  
-//     localStorage.setItem("carrinho", JSON.stringify({
-//         itensCarrinho
-//     }))
+//     modal.style.display = 'none'
 // }
 
 
+// const fechar = document.getElementById("exit")
+// const modal = document.getElementById("modal")
+// const botao = document.getElementById("botaoModal")
+
+// botao.addEventListener('click', () => {
+//     modal.style.display = 'block'
+//     modal.style.visibility = 'visible'
+// })
+
+// fechar.addEventListener('click', () => {
+//     modal.style.display = 'none'
+// })
+
+// const fechar1 = document.getElementById("exit1")
+// const modal1 = document.getElementById("modal1")
+// const botao1 = document.getElementById("botaoModal1")
+
+// botao1.addEventListener('click', () => {
+//     modal1.style.display = 'block'
+//     modal1.style.visibility = 'visible'
+// })
+
+// fechar1.addEventListener('click', () => {
+//     modal1.style.display = 'none'
+// })
